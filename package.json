@@ -2,16 +2,18 @@
   "name": "swsdkbp",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "scripts": {
-    "start": "parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html --public-url ./"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@snap/camera-kit": "^0.10.0",
     "parcel": "^2.9.3",
     "process": "^0.11.10"
+  },
+  "dependencies": {
+    "@snap/camera-kit": "^0.10.0"
   }
 }
