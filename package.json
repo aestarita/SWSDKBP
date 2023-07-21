@@ -10,10 +10,10 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel": "^2.9.3",
     "process": "^0.11.10"
   },
   "dependencies": {
-    "@snap/camera-kit": "^0.10.0"
+    "@snap/camera-kit": "^0.10.0",
+    "parcel": "^2.9.3"
   }
 }
