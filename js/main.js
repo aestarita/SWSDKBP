@@ -1,5 +1,6 @@
 import { bootstrapCameraKit, Transform2D } from "@snap/camera-kit";
 import { createMediaStreamSource } from "@snap/camera-kit";
+
 DEFAULT_GROUP_KEY = "e90568ce-829a-46e2-ae25-111bec3554f8";
 JSON_WEB_TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIjoiSldUIn0.eyJhdWQiOiJjYW52YXMtY2FudmFzYXBpIiwiaXNzIjoiY2FudmFzLXMyc3Rva2VuIiwibmJmIjoxNjg2MjM5NTM2LCJzdWIiOiJjYmEzODBiMS0yZTA1LTRjYTktYmMyMy04MDZiYTAwZGM0YWZ-U1RBR0lOR35mZDljMDRmMi1lMTUxLTQ3NDEtODE2MC0zMGQxOGU5YzE5ZDEifQ.mLtdpB2LY9VJ-ucxQB5CK-Gq3ChHnod6yDqGDZF-YY8";
 
@@ -23,4 +24,17 @@ JSON_WEB_TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIj
 
     await session.play("live");
     console.log("Lens rendering has started!");
+
+
 })();
+
+
+const express = require("express");
+const app = express();
+const PORT = process.env.PORT || 3030;
+
+console.log("Half Express!");
+
+app.listen(PORT, () => {
+    console.log(`server started on port ${PORT}`);
+  });
