@@ -27,14 +27,3 @@ JSON_WEB_TOKEN = "eyJhbGciOiJIUzI1NiIsImtpZCI6IkNhbnZhc1MyU0hNQUNQcm9kIiwidHlwIj
 
 
 })();
-
-
-const express = require("express");
-const app = express();
-const PORT = process.env.PORT || 3030;
-
-console.log("Half Express!");
-
-app.listen(PORT, () => {
-    console.log(`server started on port ${PORT}`);
-  });
